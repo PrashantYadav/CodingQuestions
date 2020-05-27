@@ -1,0 +1,5 @@
+n = int(input())
+set = set()
+for _ in range(n):
+    set.add(input())
+print(len(set))
