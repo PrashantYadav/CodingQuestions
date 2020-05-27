@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+list1 = set(list(map(int, input().split())))
+m = int(input())
+list2 = set(list(map(int, input().split())))
+a = sorted(list1.difference(list2).union(list2.difference(list1)))
+for i in a:
+    print(i)
